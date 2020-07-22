@@ -28,7 +28,7 @@ public class UrlController {
     }
 
     @PostMapping("/createShortUrl")
-    public String createShortUrl(UrlShortenerRequest urlShortenerRequest){
+    public UrlShortenerRequest createShortUrl(UrlShortenerRequest urlShortenerRequest){
         return urlService.createNewShortUrl(urlShortenerRequest);
     }
 
